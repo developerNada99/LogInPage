@@ -33,14 +33,14 @@ export default function Home() {
                 <input
                   type="email"
                   placeholder="Enter Your Email"
-                  className="text-white border-b-[1px] w-full py-2 px-3 outline-none bg-transparent"
+                  className="text-white border-b-[1px] w-full py-2 px-3 outline-none bg-transparent placeholder:text-gray-300"
                 />
               </div>
               <div className="mb-4">
                 <input
                   type="password"
                   placeholder="Enter Your Password"
-                  className="text-white border-b-[1px] w-full py-2 px-3 outline-none bg-transparent"
+                  className="text-white border-b-[1px] w-full py-2 px-3 outline-none bg-transparent placeholder:text-gray-300"
                 />
               </div>
               <div className="flex items-center justify-between">
@@ -79,21 +79,21 @@ export default function Home() {
                 <input
                   type="text"
                   placeholder="Enter Your Name"
-                  className="text-white border-b-[1px] w-full py-2 px-3 outline-none bg-transparent"
+                  className="text-white border-b-[1px] w-full py-2 px-3 outline-none bg-transparent placeholder:text-gray-300"
                 />
               </div>
               <div className="mb-4">
                 <input
                   type="email"
                   placeholder="Enter Your Email"
-                  className="text-white border-b-[1px] w-full py-2 px-3 outline-none bg-transparent"
+                  className="text-white border-b-[1px] w-full py-2 px-3 outline-none bg-transparent placeholder:text-gray-300"
                 />
               </div>
               <div className="mb-4">
                 <input
                   type="password"
                   placeholder="Enter Your Password"
-                  className="text-white border-b-[1px] w-full py-2 px-3 outline-none bg-transparent"
+                  className="text-white border-b-[1px] w-full py-2 px-3 outline-none bg-transparent placeholder:text-gray-300"
                 />
               </div>
               <div className="flex items-center justify-between">
