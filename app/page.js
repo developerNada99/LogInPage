@@ -1,12 +1,23 @@
 "use client"
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { motion, AnimatePresence} from 'framer-motion';
 
 export default function Home() {
   const [isLogin, setIsLogin] = useState(true);
+  const [loading,setLoading] = useState(true);
+
+  useEffect(()=>{
+    setTimeout(() => {
+      setLoading(false)
+    }, 1000);
+  },[])
+
+    if(loading){
+      return <div className='w-20 h-20 mx-auto mt-60 border-8 border-b-white rounded-full border-blue-700 animate-spin'></div>
+    }
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[url('/bg.jpg')] bg-cover bg-center relative after:absolute after:w-full after:h-full after:bg-[#8388a538]">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 relative">
       <div  className="z-30 w-full h-[450px] max-w-md p-8 rounded-xl shadow-md bg-white/30 backdrop-blur-md border border-white/20 truncate">
         <AnimatePresence>
         {isLogin ? (
